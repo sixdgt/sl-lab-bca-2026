@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding JavaScript with HTML</title>
+</head>
+<body>
+    <h1>Embedding JavaScript with HTML</h1>
+    <p>This is an example of how to embed JavaScript within an HTML document.</p>
+    <span id="message"></span>
+
+    <ul id="dataList">
+        <!-- JavaScript will dynamically add list items here -->
+    </ul>
+    
+    <!-- internal javascript -->
+    <script>
+        // console.log() is a method used to print messages to the console for debugging purposes.
+        console.log("Hello, this is a message from the JavaScript code embedded in the HTML document!");
+        // defining html element with id "message" and assigning it to a variable
+        const messageElement = document.getElementById("message");
+        // setting the text content of the message element to a string
+        messageElement.textContent = "This message is displayed using JavaScript!";
+
+        // calculation with arithmetic operators
+        const markedPrice = 152.25;
+        const discount = 0.15; // 15% discount
+        const vatAmount = markedPrice * 0.05; // 5% VAT
+        const discountAmount = markedPrice * discount; // calculate discount amount
+        const finalPrice = markedPrice - discountAmount + vatAmount; // calculate final price
+        console.log("Final Price after discount and VAT: " + finalPrice.toFixed(2)); // log the final price to the console with 2 decimal places
+    </script>
+    <!-- external javascript -->
+    <script src="data.js"></script>
+</body>
+</html>
