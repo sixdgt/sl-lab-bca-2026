@@ -1,0 +1,10 @@
+It is a to-do-list app case study using JavaScript and LocalStorage.
+
+Features of the app:
+1. Create Task
+2. Remove Task
+
+For this app: Browser Local Storage will be used to store tasks, array functions to add and remove tasks.
+For example 
+1. to add task: push()
+2. to remove task: splice(index, 1)
